@@ -27,7 +27,7 @@ const account3 = {
 };
 
 const account4 = {
-  owner: "Sarah Smith",
+  owner: "Will Smith",
   movements: [430, 1000, 700, 50, 90],
   interestRate: 1,
   pin: 4444,
@@ -78,3 +78,17 @@ const displayMovements = function (movements) {
 };
 
 displayMovements(account1.movements);
+
+// creating usernames by producing a side effect (modifying existing fns and variables)
+const createUsernames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map((name) => name[0])
+      .join("");
+  });
+};
+
+createUsernames(accounts);
+console.log(accounts);
