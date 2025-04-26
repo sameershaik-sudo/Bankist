@@ -156,6 +156,22 @@ btnLogin.addEventListener("click", function (e) {
   }
 });
 
+btnLoan.addEventListener("click", function (e) {
+  e.preventDefault();
+  const amount = Number(inputLoanAmount.value);
+  if (
+    amount > 0 &&
+    currentAccount.movements.some((mov) => mov >= 0.1 * amount) // some is used when any one of the elements satisfies the condition
+  ) {
+    // add movement
+    currentAccount.movements.push(amount);
+
+    // update UI
+    updateUI(currentAccount);
+  }
+  inputLoanAmount.value = "";
+});
+
 // Transfers
 btnTransfer.addEventListener("click", function (e) {
   e.preventDefault();
