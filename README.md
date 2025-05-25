@@ -2,11 +2,13 @@
 
 *Test Login Creds :* 
 
-**ACC1 ->**
-username : ss
-password : 1111
+**ACC1 ->** <br>
+username : ss <br>
+password : 1111 <br>
 
-**ACC2 ->**
-username : ts
-password : 2222
+<hr>
+
+**ACC2 ->** <br>
+username : ts <br>
+password : 2222 <br>
 
