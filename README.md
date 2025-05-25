@@ -1,6 +1,6 @@
 **Project Demo :** [Bankist](https://sameershaik-sudo.github.io/Bankist/)
 
-* *Test Login Creds :* * 
+*Test Login Creds :* 
 
 **ACC1 ->**
 username : ss
